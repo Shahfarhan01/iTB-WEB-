@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iTalentBuddy - Your Vision Our Mission</title>
+    <!-- Font Awesome for icons (e.g., eye icon, menu icon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Font - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style-responsive-fixed.css"> -->
+
+</head>
+
+<body>
+    <!-- Grid Background -->
+    <div class="grid-background"></div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <!-- Logo -->
+        <div class="logo">
+            <!-- Placeholder for a simple icon, you could replace with an SVG or image -->
+            <i class="fas fa-laptop-code"></i>
+            <span>iTalentBuddy</span>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+            <a href="#home">Home</a>
+            <a href="#about-section">About</a>
+            <!-- <a href="#services">Services</a> -->
+            <a href="#services-section">Our Work</a>
+            <a href="#influcer">Sponser Promotion</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Get Started Button (Desktop) -->
+
+
+        <!-- Mobile Menu Button -->
+        <div class="mobile-menu-button-container">
+            <button id="mobile-menu-button" class="mobile-menu-button">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu (Hidden by default, toggled by JS) -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-close-button-container">
+            <button id="close-mobile-menu-button" class="mobile-menu-close-button">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <!-- <a href="#">Services</a> -->
+            <a href="#">Our Work</a>
+            <a href="#">Sponser Promotion</a>
+            <a href="#">Contact</a>
+            <button class="get-started-button-mobile">
+                Get Started
+            </button>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <main class="hero-section" id="home">
+        <h1 class="hero-title">
+            Your Vision... Our Mission...
+        </h1>
+        <p class="hero-description">
+            Professional Indian eSports organization managing tournaments, broadcasts, marketing campaigns, and
+            influencer collaborations to uplift gaming talent across the country.
+        </p>
+
+        <!-- Impressions Section -->
+        <div class="impressions-section">
+            <i class="fas fa-eye"></i>
+            <span class="count">12M+</span>
+            <span class="label">Impressions</span>
+        </div>
+
+        <!-- Call to Action Buttons -->
+        <div class="cta-buttons">
+            <button class="cta-button blue">
+                <a href="#contact" >Book Us for Your Next Event </a>
+               <i class="fas fa-arrow-right"></i>
+                
+            </button>
+            <button class="cta-button purple">
+                <i class="fas fa-play"></i> Join Our Tournaments
+            </button>
+        </div>
+        <!-- About Section -->
+        <section id="about-section" class="about-section">
+            <h2 class="about-section-heading">About Us <br> Empowering Gaming Talent</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    iTalentBuddy is an eSports Event Organization by Experienced
+                    Professionals with the motive of Betterment on the Indian
+                    Gaming Community by holding eSports events and providing
+                    an opportunity to every gamer out there. </p>
+                <p class="about-text">
+                    We strive to achieve this by mixing up brands and collaborating
+                    with them to provide the best platforms for these upcoming
+                    talents in the Indian gaming community
+                </p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Years of Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Tournaments Hosted</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5000+</div>
+                        <div class="stat-label">Players Supported</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- 
+        <h1>What we Offer ?</h1>
+        <div  id="services" class="services">
+            <div class="service-box">
+                <div class="icon">🎮</div>
+                <h2 class="title blue">Tournament Management</h2>
+                <ul>
+                    <li>We do Hold Expertise in executing tournaments of any Scale as well as events based on Platforms
+                        i.e Online Tournaments as well as Offline Events. Including LAN Stage.</li>
+                    <li>Let it be Mobile based Events PC Based Events or generic Tournaments we’ve got it all.</li>
+                    <li>Not only we manage event we also have best in class broadcasting facilities as well as content
+                        creation capabilities for the events.</li>
+                </ul>
+            </div>
+            <div class="service-box">
+                <div class="icon">🧑‍💼</div>
+                <h2 class="title blue">Talent Management</h2>
+                <ul>
+                    <li>With the pool of our Influencers, you can build brand awareness, credibility and trust among the
+                        users.</li>
+                    <li>When it's done right, the content produced by influencers conveys expertise and clarifies that
+                        your brand values and benefits the users.</li>
+                    <li>With the help of our Influencers, we make sure that brands get Delightful and Eye Pleasing
+                        Content, resulting in High Engagement and Reach.</li>
+                </ul>
+            </div>
+        </div>
+        
+        </div>
+
+        <div class="services">
+            <div class="service-box">
+                <div class="icon">👾</div>
+                <h2 class="title blue">Event Operations</h2>
+                <ul>
+                    <li>Event Operations involve Staging events, irrespective of whether it is small-scale events or
+                        Events at a large scale, we always implement the most significant ways of operations for the
+                        flawless execution of the event.</li>
+                    <li>We also offer new and innovative ideas that can be utilized for each event which will result in
+                        an engaging experience for the audience, offering a diverse and unique event.</li>
+                </ul>
+            </div>
+            <div class="service-box">
+                <div class="icon">📺</div>
+                <h2 class="title blue">Event Broadcasting/Production</h2>
+                <ul>
+                    <li>Delivering live Broadcasting at scale requires seamless technology integration and tight
+                        workflows to optimize the operation and produce esports for massive audiences.</li>
+                    <li>Being in the gaming industry for more than 2+ years we thoroughly know how to indulge brand
+                        integration and entertainment for the audience.</li>
+                    <li>Where brands will Achieve High ROI along with Great Audience Engagement.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="services">
+            <div class="service-box">
+                <div class="icon">📊</div>
+                <h2 class="title blue">Marketing Campaign</h2>
+                <ul>
+                    <li>As the core of any marketing strategy is the Right Audience, finding the right esports audience
+                        throughout the community lets us communicate with them the right way.</li>
+                    <li>We help brands to connect with the community with perfect Strategies so that brands can achieve
+                        their goals via a competitive Esports environment as well as through Gaming community.</li>
+                </ul>
+            </div>
+            <div class="service-box">
+                <div class="icon">🛠️</div>
+                <h2 class="title blue">Platform Support</h2>
+                <ul>
+                    <li>We Aim to provide positive platform experiences that keep a user loyal to the Platform.</li>
+                    <li>Additionally, a meaningful user experience allows brands/Platforms to define customer journeys
+                        on their platform that are most conducive to Platform Success.</li>
+                    <li>We have a dedicated support team who work as a bridge between platform and users, Then a set of
+                        standards and protocols that just facilitate interaction in between.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="services">
+            <div class="service-box">
+                <div class="icon">👥</div>
+                <h2 class="title blue">Consultancy</h2>
+                <ul>
+                    <li>We at iTalentBuddy do not offer a one-size-fits-all solution. Our value comes in learning about
+                        each client’s business and goals, and tailoring advice and strategy consulting to the specific
+                        challenges that the business faces.</li>
+                    <li>We provide opinions, analysis, and recommendations to organizations or individuals, based on our
+                        expertise.</li>
+                    <li>We do serve as objective troubleshooters, and provide strategies to prevent problems and improve
+                        performance of Platform/Business.</li>
+                </ul>
+            </div>
+            <div class="service-box">
+                <div class="icon">💡</div>
+                <h2 class="title blue">Public Relations</h2>
+                <ul>
+                    <li>Public Relations is a drop of storytelling, a hint of creativity, a dash of sales, a bit of
+                        people management.</li>
+                    <li>Our core objective is to cut through the noise, generate awareness for your brand, and help
+                        establish media relations through powerful, creative campaigns.</li>
+                </ul>
+            </div>
+        </div> -->
+        <section class="gaming-section">
+            <div class="gaming-content">
+                <div class="gaming-text">
+                    <h2>Gaming Showcase</h2>
+                    <p>
+                        Experience the thrill of gaming events, tournaments, and digital expos with immersive
+                        engagement. Dive into the world of competitive gaming with expert production and event
+                        excellence.
+                    </p>
+                </div>
+                <div class="gaming-image">
+                    <img src="image.png" alt="Gaming Image">
+                </div>
+            </div>
+        </section>
+
+        <section class="promotions-section">
+            <h1 class="title">PROMOTIONS</h1>
+            <div class="promo-grid">
+                <div class="promo-card">
+                    <i class="fas fa-clipboard-list icon"></i>
+                    <h2>Registration Drives</h2>
+                    <p>Our team not only helps the players with getting registered, but also promotes the tournament to
+                        ensure 100% fill-rate.</p>
+                </div>
+                <div class="promo-card">
+                    <i class="fas fa-microphone icon"></i>
+                    <h2>Broadcast Promotions</h2>
+                    <p>Our tournament broadcasts are heavily promoted by us on our Social Media, Influencers and other
+                        networks.</p>
+                </div>
+                <div class="promo-card">
+                    <i class="fas fa-bullhorn icon"></i>
+                    <h2>Social Media Promotions</h2>
+                    <p>We have Social Media channels on multiple platforms with a highly engaged userbase.</p>
+                </div>
+                <div class="promo-card">
+                    <i class="fas fa-user-plus icon"></i>
+                    <h2>Influencer Marketing</h2>
+                    <p>We have a wide network of influencers in India across all games and languages.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Se rvices Section -->
+        <section id="services-section" class="services-section">
+            <p class="services-subtitle">OUR TOURNAMENT</p>
+            <h2 class="services-heading">PLAY TO EARN GAMES</h2>
+            <div class="tournament-cards-container">
+                <!-- Tournament Card 1: Weekly -->
+                <div class="tournament-card">
+                    <div class="tournament-card-header green">
+                        <span class="prize">$25000</span>
+                        <span class="time">DAY HOUR MIN SEC</span>
+                    </div>
+                    <div class="tournament-card-body">
+                        <h3 class="tournament-name">TOURNAMENT<br>OF WEEKLY</h3>
+                        <p class="prizes-placed"><i class="fas fa-trophy"></i> 3 PRIZE PLACES</p>
+                        <ul class="player-list">
+                            <li class="player-item">
+                                <div class="player-info">
+                                    <img src="https://placehold.co/40x40/374151/ffffff?text=P1" alt="Player Avatar"
+                                        class="player-avatar">
+                                    <span class="player-name">BLACK NINJA</span>
+                                </div>
+                                <span class="player-prize">$75000 <i class="fas fa-arrow-right"></i></span>
+                            </li>
+                            <li class="player-item">
+                                <div class="player-info">
+                                    <img src="https://placehold.co/40x40/374151/ffffff?text=P2" alt="Player Avatar"
+                                        class="player-avatar">
+                                    <span class="player-name">FOXTIR MAX</span>
+                                </div>
+                                <span class="player-prize">$75000 <i class="fas fa-arrow-right"></i></span>
+                            </li>
+                            <li class="player-item">
+                                <div class="player-info">
+                                    <img src="https://placehold.co/40x40/374151/ffffff?text=P3" alt="Player Avatar"
+                                        class="player-avatar">
+                                    <span class="player-name">KULAM DAVE</span>
+                                </div>
+                                <span class="player-prize">$75000 <i class="fas fa-arrow-right"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tournament Card 2: Lucky Card -->
+                <div class="tournament-card">
+                    <div class="tournament-card-header orange">
+                        <span class="prize">$50000</span>
+                        <span class="time">DAY HOUR MIN SEC</span>
+                    </div>
+                    <div class="tournament-card-body">
+                        <h3 class="tournament-name">TOURNAMENT<br>LUCKY CARD</h3>
+                        <p class="prizes-placed"><i class="fas fa-trophy"></i> 10 PRIZE PLACES</p>
+                        <ul class="player-list">
+                            <li class="player-item">
+                                <div class="player-info">
+                                    <img src="https://placehold.co/40x40/374151/ffffff?text=P1" alt="Player Avatar"
+                                        class="player-avatar">
+                                    <span class="player-name">BLACK NINJA</span>
+                                </div>
+                                <span class="player-prize">$75000 <i class="fas fa-arrow-right"></i></span>
+                            </li>
+                            <li class="player-item">
+                                <div class="player-info">
+                                    <img src="https://placehold.co/40x40/374151/ffffff?text=P2" alt="Player Avatar"
+                                        class="player-avatar">
+                                    <span class="player-name">FOXTIR MAX</span>
+                                </div>
+                                <span class="player-prize">$75000 <i class="fas fa-arrow-right"></i></span>
+                            </li>
+                            <li class="player-item">
+                                <div class="player-info">
+                                    <img src="https://placehold.co/40x40/374151/ffffff?text=P3" alt="Player Avatar"
+                                        class="player-avatar">
+                                    <span class="player-name">KULAM DAVE</span>
+                                </div>
+                                <span class="player-prize">$75000 <i class="fas fa-arrow-right"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tournament Card 3: Of Month -->
+                <div class="tournament-card">
+                    <div class="tournament-card-header light-green">
+                        <span class="prize">$75000</span>
+                        <span class="time">DAY HOUR MIN SEC</span>
+                    </div>
+                    <div class="tournament-card-body">
+                        <h3 class="tournament-name">TOURNAMENT<br>OF MONTH</h3>
+                        <p class="prizes-placed"><i class="fas fa-trophy"></i> 50 PRIZE PLACES</p>
+                        <ul class="player-list">
+                            <li class="player-item">
+                                <div class="player-info">
+                                    <img src="https://placehold.co/40x40/374151/ffffff?text=P1" alt="Player Avatar"
+                                        class="player-avatar">
+                                    <span class="player-name">BLACK NINJA</span>
+                                </div>
+                                <span class="player-prize">$75000 <i class="fas fa-arrow-right"></i></span>
+                            </li>
+                            <li class="player-item">
+                                <div class="player-info">
+                                    <img src="https://placehold.co/40x40/374151/ffffff?text=P2" alt="Player Avatar"
+                                        class="player-avatar">
+                                    <span class="player-name">FOXTIR MAX</span>
+                                </div>
+                                <span class="player-prize">$75000 <i class="fas fa-arrow-right"></i></span>
+                            </li>
+                            <li class="player-item">
+                                <div class="player-info">
+                                    <img src="https://placehold.co/40x40/374151/ffffff?text=P3" alt="Player Avatar"
+                                        class="player-avatar">
+                                    <span class="player-name">KULAM DAVE</span>
+                                </div>
+                                <span class="player-prize">$75000 <i class="fas fa-arrow-right"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Work Section
+        <section id="our-work-section" class="our-work-section">
+            <p class="section-subtitle">OUR CREATIVE JOURNEY</p>
+            <h2 class="section-heading">Showcasing Our Epic Work</h2>
+            <div class="work-grid-container">
+             
+                <div class="work-card featured-card">
+                    <img src="https://placehold.co/800x450/2563EB/FFFFFF?text=Major+Tournament"
+                        alt="Major Tournament Highlight" class="work-image">
+                    <div class="card-content">
+                        <h3 class="work-title">The Grand Finals: Season X</h3>
+                        <p class="work-description">
+                            Managed and broadcasted our largest eSports tournament to date, reaching millions of viewers
+                            worldwide.
+                        </p>
+                        <a href="#" class="view-button">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <video autoplay muted loop playsinline
+                        poster="https://placehold.co/600x338/6D28D9/FFFFFF?text=Influencer+Collab" class="work-video">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="card-content">
+                        <h3 class="work-title">Gamer Spotlight: Pro Player Series</h3>
+                        <p class="work-description">
+                            Successful collaboration with top gaming influencers, creating engaging content and
+                            expanding our reach.
+                        </p>
+                        <a href="#" class="view-button">Watch Now <i class="fas fa-play"></i></a>
+                    </div>
+                </div> -->
+
+        <!-- Work Item 3: Marketing Campaign -->
+        <!-- <div class="work-card">
+                <img src="https://placehold.co/600x400/DB2777/FFFFFF?text=Marketing+Campaign" alt="Marketing Campaign" class="work-image">
+                <div class="card-content">
+                    <h3 class="work-title">Launchpad Campaign: New Game Release</h3>
+                    <p class="work-description">
+                        Executed a comprehensive marketing strategy for a major game launch, driving massive player acquisition.
+                    </p>
+                    <a href="#" class="view-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div> -->
+
+        <!-- Work Item 4: Community Event -->
+        <!-- <div class="work-card">
+                    <img src="https://placehold.co/600x400/059669/FFFFFF?text=Community+Event" alt="Community Event"
+                        class="work-image">
+                    <div class="card-content">
+                        <h3 class="work-title">Community Clash: Local Showdown</h3>
+                        <p class="work-description">
+                            Organized grassroots community events to foster local talent and engagement.
+                        </p>
+                        <a href="#" class="view-button">See Highlights <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+               
+                <div class="work-card">
+                    <img src="https://placehold.co/600x400/9333EA/FFFFFF?text=Broadcast+Production"
+                        alt="Broadcast Production" class="work-image">
+                    <div class="card-content">
+                        <h3 class="work-title">Behind the Scenes: Pro Broadcast</h3>
+                        <p class="work-description">
+                            Delivering high-quality live stream productions for major eSports events.
+                        </p>
+                        <a href="#" class="view-button">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <img src="https://placehold.co/600x400/F59E0B/FFFFFF?text=Talent+Management" alt="Talent Management"
+                        class="work-image">
+                    <div class="card-content">
+                        <h3 class="work-title">Rising Stars: Talent Incubation</h3>
+                        <p class="work-description">
+                            Nurturing aspiring eSports players and helping them achieve their professional goals.
+                        </p>
+                        <a href="#" class="view-button">Meet Our Talent <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="sponsor-section" id="influcer">
+            <h1 class="sponsor-title">SPONSOR PROMOTIONS</h1>
+            <div class="sponsor-grid">
+                <div class="sponsor-card">
+                    <i class="fas fa-chart-pie sponsor-icon"></i>
+                    <h2>Sponsored segments</h2>
+                    <p>We have creative brainstorming sessions to create sponsored segments that do justice to the
+                        quality of the product and entertain the viewers at the same time.</p>
+                </div>
+                <div class="sponsor-card">
+                    <i class="fas fa-bullhorn sponsor-icon"></i>
+                    <h2>Shoutouts</h2>
+                    <p>All tournament broadcasts conducted by us are given shoutouts by our community and by our
+                        influencer network.</p>
+                </div>
+                <div class="sponsor-card">
+                    <i class="fas fa-cogs sponsor-icon"></i>
+                    <h2>Brand Integration</h2>
+                    <p>We try to promote our sponsors by integrating their assets in all viable Social Media posts,
+                        Community posts and Broadcast elements.</p>
+                </div>
+            </div>
+        </section>
+<main class="contact-main">
+            <!--         <section class="contact-section">
+                <h2 class="contact-section-heading">Get in Touch</h2>
+                <p class="contact-description">
+                    We'd love to hear from you! Whether you have a question about our services, want to book us for an
+                    event, or just want to say hello, feel free to reach out using the form below.
+                </p>
+
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your message..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button> -->
+                <!-- </form> -->
+
+                <div class="contact-info" id="contact">
+                    <p>Or connect with us directly:</p>
+                    <p><i class="fas fa-envelope"></i> Email: <a
+                            href="mailto:info@italentbuddy.com">info@italentbuddy.com</a></p>
+                    <!-- <p><i class="fas fa-phone"></i> Phone: <a href="tel:+911234567890">+91 123 456 7890</a></p> -->
+                    <!-- <p><i class="fas fa-map-marker-alt"></i> Address: 123 eSports Lane, Gaming City, India</p> -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="modern-footer">
+            <div class="footer-container">
+                <div class="footer-top">
+                    <p>&copy; 2025 <span>iTalentBuddy</span>. All rights reserved.</p>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="https://discord.gg/4VCGFqs8t6"> <i class="ri-discord-fill"></i></a>
+                    <a href="https://www.instagram.com/italentbuddy"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/italentbuddy-event-management-opc-private-limited/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href=" info@italentbuddy.com "><i class="ri-mail-fill"></i></a>
+                </div>
+            </div>
+        </footer>
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
